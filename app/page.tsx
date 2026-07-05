@@ -1,7 +1,6 @@
 'use client';
 import { Turnstile } from '@marsidev/react-turnstile';
 import { useState } from 'react';
-import MusicPlayer from './MusicPlayer';
 import GameCard from './GameCard';
 export default function Page() {
   const [showQR, setShowQR] = useState(false);
@@ -143,7 +142,6 @@ export default function Page() {
           views="970" 
         />
       </div>
-    <MusicPlayer />
     </main>
   );
 }

@@ -97,10 +97,6 @@ html, body {
     padding: 10px;
   }
 
-  .music-player {
-    position: relative !important;
-    width: 95% !important;
-    margin: 10px auto !important;
   }
 
   h1 {
@@ -110,5 +106,10 @@ html, body {
 
   body {
     overflow-x: hidden;
+  }
+}
+@media (max-width: 768px) {
+  .music-player, .rhap_container {
+    display: none !important;
   }
 }
