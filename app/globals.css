@@ -86,3 +86,29 @@ html, body {
   margin: 0;
   padding: 0;
 }
+/* Chỉ cần 1 dòng này thôi */
+@media (max-width: 768px) {
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .music-player {
+    position: relative !important;
+    width: 95% !important;
+    margin: 10px auto !important;
+  }
+
+  h1 {
+    font-size: 20px !important;
+    margin: 10px 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
