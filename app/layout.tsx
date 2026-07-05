@@ -1,17 +1,15 @@
+import type { Metadata } from 'next';
 import './globals.css';
-import { Playfair_Display } from 'next/font/google';
 
-const playfair = Playfair_Display({ 
-  subsets: ['latin'], 
-  weight: ['400', '700'] 
-});
+export const metadata: Metadata = {
+  title: 'REALM GAME VN | Vương Quốc Game Visual Noel',
+  description: 'Nơi chia sẻ các tựa game hay nhất',
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="vi">
-      <body style={{ margin: 0, padding: 0 }}>
-        {children}
-      </body>
+      <body style={{ margin: 0, padding: 0 }}>{children}</body>
     </html>
   );
 }
