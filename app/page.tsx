@@ -125,7 +125,6 @@ export default function Page() {
         <p style={{ fontSize: '20px', fontWeight: 'bold' }}>Vương quốc trò chơi Visual Novel 18+ Việt Hóa
         </p>
       </div>
-      <MusicPlayer />
       
       
       <div style={{ 
@@ -144,7 +143,7 @@ export default function Page() {
           views="970" 
         />
       </div>
-    
+    <MusicPlayer />
     </main>
   );
 }
