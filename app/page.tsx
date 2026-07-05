@@ -1,9 +1,21 @@
 'use client';
+import { Turnstile } from '@marsidev/react-turnstile';
 import { useState } from 'react';
 import MusicPlayer from './MusicPlayer';
 import GameCard from './GameCard';
 export default function Page() {
   const [showQR, setShowQR] = useState(false);
+  const [isVerified, setIsVerified] = useState(false);
+  if (!isVerified) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <Turnstile 
+          siteKey="0x4AAAAAADwH9-3KCJM6Gcws" 
+          onSuccess={() => setIsVerified(true)} 
+        />
+      </div>
+    );
+  }
   return (
     <main style={{ width: '100vw', height: '100vh', position: 'relative' }}>
       

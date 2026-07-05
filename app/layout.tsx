@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'REALM GAME VN | Vương Quốc Game Visual Noel',
+  title: 'RealmGameVN | Vương Quốc Game Visual Noel',
   description: 'Nơi chia sẻ các tựa game hay nhất',
 };
 
