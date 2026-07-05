@@ -1,0 +1,88 @@
+/* Loại bỏ mọi khoảng cách thừa của trình duyệt */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000; /* Đảm bảo nền đen */
+}
+/* Thêm "main" vào trước để tăng độ ưu tiên lên cao nhất */
+main .rhap_container {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: #fff !important;
+}
+
+main .rhap_button-clear {
+  color: #fff !important;
+}
+
+main .rhap_button-clear svg {
+  fill: #fff !important;
+}
+
+main .rhap_progress-filled {
+  background-color: #ffcc00 !important;
+}
+/* Ép tất cả các thẻ chứa chữ phải có viền */
+*, *:before, *:after {
+  text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000 !important;
+}
+
+/* Loại bỏ viền đen cho input để tránh làm xấu ô tìm kiếm */
+input, button {
+  text-shadow: none !important;}
+/* Thêm viền đen cho chữ bên trong nút Đăng nhập */
+button {
+  text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000 !important;
+}
+/* Thu nhỏ kích thước nút bấm */
+.rhap_button-clear {
+  width: 15px !important;  /* Giảm kích thước vùng bấm */
+  height: 15px !important;
+  font-size: 15px !important; /* Thu nhỏ các icon chữ/ký tự */
+}
+
+/* Thu nhỏ icon SVG (Play, Next, Previous...) */
+.rhap_button-clear svg {
+  width: 20px !important; /* Giảm độ rộng icon */
+  height: 20px !important;
+}
+
+/* Thu nhỏ riêng nút Play/Pause vì nó thường to hơn các nút khác */
+.rhap_play-pause-button {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.rhap_play-pause-button svg {
+  width: 50px !important;
+  height: 50px !important;
+}
+/* Đổi màu số giây (hiện tại và tổng thời gian) thành màu trắng */
+.rhap_current-time, 
+.rhap_total-time {
+  color: #ffffff !important;
+}
+
+/* Tùy chọn: Nếu muốn số giây đậm hơn hoặc dễ nhìn hơn trên nền tối */
+.rhap_current-time, 
+.rhap_total-time {
+  font-weight: 500 !important;
+  text-shadow: 1px 1px 2px #000 !important; /* Thêm viền đen nhẹ để nổi bật */
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
